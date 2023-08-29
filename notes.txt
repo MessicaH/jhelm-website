@@ -1,0 +1,12 @@
+<li>FEWD Basics</li>
+This would be a webpage version of how-to 2-page document I was going to make in Canva.
+
+
+Projects
+- Copy/paste files and reroute to JHelm site.
+- Improve upon basics for required assignments and basic video code-along
+
+<li>Proj: Dice Game</li>
+<li>Proj: Drum Kit</li>
+<li>Proj: War Card Game</li>
+<li>Proj: Tic-Tac-Toe Game</li>

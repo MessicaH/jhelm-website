@@ -1,0 +1,26 @@
+{
+  "name": "myfewdwebsite-tutorial_builds",
+  "version": "1.0.0",
+  "description": "Application of front-end learning and tutorial step-by-step following along",
+  "main": "jhelm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MessicaH/jhelm-website.git"
+  },
+  "keywords": [
+    "Jessica",
+    "Helmers"
+  ],
+  "author": "Jessica Helmers @messicah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MessicaH/jhelm-website/issues"
+  },
+  "homepage": "https://github.com/MessicaH/jhelm-website#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
