@@ -1,0 +1,91 @@
+/* All elements in webpage */
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, main {
+    font-size: medium;
+}
+
+/* Nav Menu (at top of page) elements and styling*/
+
+.navbar-brand {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.navbar-nav{
+    margin-left: 25px;
+}
+
+/*
+.nav-link:hover {
+    background-color: slateblue;
+    color: white; 
+    border-radius: 5px;
+}
+*/
+
+.navbar-text {
+    font-size: smaller;
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.icon_prof-pif {
+    background-image: url(/images/profile-no_bg.png);
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+.icon-table {
+    text-align: center;
+}
+
+/* Body > Main elements and styling */
+
+.main-margins {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Body > Footer elements and styling */
+
+.footer-main {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 25px;
+    font-size: small;
+    text-align: center;
+}
+
+i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.bio {
+    margin-block: 25px;
+    margin-left: 10px;
+}
+
+.bio2 {
+    margin-block: 10px;
+}
+
+.footer-links {
+    list-style-type: none;
+    font-size: medium;
+}
+
+.footer-links:visited {
+    color: lightskyblue;
+}
+
+.footer-pic {
+    border-radius: 5px;
+    text-align: center;
+}

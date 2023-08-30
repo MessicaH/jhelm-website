@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/MessicaH/jhelm-website#readme",
   "dependencies": {
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5"
   }
 }
