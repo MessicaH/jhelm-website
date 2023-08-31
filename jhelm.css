@@ -57,7 +57,7 @@ header, main {
 .footer-main {
     background-color: rgb(71, 71, 71);
     color: white;
-    padding: 25px;
+    padding: 25px 25px 10px 25px;
     font-size: small;
     text-align: center;
 }
@@ -76,6 +76,18 @@ i {
     margin-block: 10px;
 }
 
+.bio-pic {
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 3px;
+    box-shadow: 5px 5px lightblue;
+}
+
+.italic-p {
+    font-style: italic;
+    font-size: medium;
+}
+
 .footer-links {
     list-style-type: none;
     font-size: medium;
@@ -88,4 +100,17 @@ i {
 .footer-pic {
     border-radius: 5px;
     text-align: center;
+}
+
+.shadow-box {
+    box-shadow: 5px 5px 5px lightblue;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.card-heading {
+    font-weight: bold;
+    font-stretch: ultra-expanded;
 }
