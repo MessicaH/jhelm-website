@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jhelm.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="shadow-box">
+            <h1 class="section-heading-dark">This is a header area</h1>
+            <p>Lorem ipsum dolor et septum.</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container table-DOM">
+            <form>
+                <input type="text" id="text1" class="form-control">
+                <button class="btn btn-primary button-DOM" type="submit" onclick="addToTable(event)">Add to Table</button>
+            </form>
+            <table class="table table-striped">
+                <tbody id="items-table">
+                    <tr><td>This table is empty.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+
+    <script> // Move to .js file when done ////////////////////////////////////////////////////////
+// Get what's in the text box
+        const createNewText1 = document.getElementById("text1")  // Give me access to this input field
+        console.log("createNewText1"+" successfully found.");
+
+        const itemsTable = document.querySelector("#items-table")  // Look at this table element and then do the things
+        console.log(itemsTable);
+        
+        function addToTable(event) {
+            event.preventDefault() // Prevent default behavior of the event (refresh)
+            console.log(createNewText1.value);
+
+// Make a new <tr> with info in <td> cells from data in text field
+            const newRow = document.createElement("tr") // Makes new element of <tr>
+        //  console.log(newRow[i].value);  <---- How to track which row is entered or may have an error?   
+            newRow.innerHTML = `<td>${createNewText1.value}</td>`  // Write/add this to the table
+            console.log(newRow);
+
+        //  newRow.textContent = createNewText1.value // This worked before moving entries into <td> of <tr> for table styling above.
+
+// Add them to the table
+        //    document.body.appendChild(newRow); // Takes input and adds item, but not within table
+            itemsTable.appendChild(newRow); // Takes input and confirm push/adds into table with id = "items-Table"
+
+
+        // Clear out text field after entry
+            createNewText1.value = "";
+        }
+    </script>
+    <footer>
+
+    </footer>
+
+<!--Script block for Bootstrap and JQuery-->
+<script src="jhelm.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

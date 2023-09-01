@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Helmers</title>
-    <link rel="icon" type="image/x-icon" href="/images/profile-no_bg.png">
+    <link rel="icon" type="image/x-icon" href="images/bw-1254-removebg-preview.png">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!--bootstrap CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--bootstrap icons CSS-->
     <link rel="stylesheet" href="jhelm.css"> <!--my custom CSS-->
@@ -12,63 +12,147 @@
 
 <body>
   <header>
-    <nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
-      <a class="navbar-brand" href="jhelm-home.html">Jessica Helmers</a> <!--This is the main/home nav title/link-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" 
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText"> <!--This is the main nav menu and associated links-->
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Bio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="jhelm-home.html">Jessica Helmers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText"> <!--This is the main nav menu and associated links-->
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bio</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
-        </ul>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+          </ul>
+        </div>-->
+            <li class="nav-item dropdown"> <!--This is the first dropdown in Navbar menu-->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu shadow-box">
+                <p class="section-heading-dark">Udemy</p>
+                <li><a class="dropdown-item p-small" href="#">Dice Game</a></li>
+                <li><a class="dropdown-item p-small" href="#">Music Camp</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <p class="section-heading-dark">Promineo Tech</p>
+                <li><a class="dropdown-item p-small" href="#">Tic-Tac-Toe</a></li>
+                <p class="section-heading-dark">GitHub<img src="images/github-mark-white.png" class="icon_navbar"></p>
+                <li><a class="dropdown-item p-small" href="https://github.com/MessicaH">My Public Repos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"> <!--This is the second dropdown in Navbar menu-->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Portfolio
+              </a>
+              <ul class="dropdown-menu shadow-box">
+                <p class="section-heading-dark">How-To Guides</p>
+                <li><a class="dropdown-item p-small" href="#">Dungeons & Dragons (D&D)</a></li>
+                <li><a class="dropdown-item p-small" href="#">HTML, CSS and Javascript (Front-End Basics)</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <p class="section-heading-dark">Case Studies</p>
+                <li><a class="dropdown-item p-small" href="#">Who Should Rule</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <span class="navbar-text">This text is a "span"ner to my plan.</span> <!--Some fun text in upper right-hand corner-->
       </div>
-      <span class="navbar-text">This text is a "span"ner to my plan.</span>
     </nav>
+    <!--<nav class="container-fluid navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="jhelm-home.html">Jessica Helmers</a> !--This is the main/home nav title/link--
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" 
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText"> !--This is the main nav menu and associated links--
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+          </ul>
+        </div>
+      <span class="navbar-text">This text is a "span"ner to my plan.</span> !--Some fun text in upper right-hand corner--
+      </div>
+    </nav>-->
   </header>
-  <main class="container main-margins">                                                   
+
+  <main class="container main-margins"> <!--Main section of the website-->                                           
     <div>
       <div class="row">
-        <div class="col-sm-2">
-          <h1>Welcome</h1>
+        <div>
+          <h1 class="headline">Welcome</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row center"> <!--Move to Bio page when ready to copy/paste code-->
         <div class="col-sm-1">
           <img src="images/profile-no_bg.png" height="100" class="bio-pic" alt="profile photo of Jessica Helmers">
         </div>
         <div class="col-sm-3 bio">
-          <p>Jessica Helmers<br>
+          <p><b>Jessica Helmers</b><br>
           Minneapolis-Saint Paul, Minnesota</p>
         </div>
-        <div class="col-sm-3 bio2">
-          <ul>
-            <li>Taurus<i class="bi bi-sun"></i></li>
-            <li>Leo<i class="bi bi-moon"></i></li>
-            <li>Sagittarius<i class="bi bi-arrow-up"></i></li>
+        <div class="col-sm-3 bio">
+          <ul class="footer-links card zodiac-card text-center">
+            <li>Taurus<i class="bi bi-sun zodiac-glow"></i></li>
+            <li>Leo<i class="bi bi-moon zodiac-glow"></i></li>
+            <li>Sagittarius<i class="bi bi-arrow-up zodiac-glow"></i></li>
           </ul>  
         </div>
-      </div>               
+      </div>              
     </div>
     <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Luctus venenatis lectus magna fringilla urna porttitor. In est ante in nibh mauris cursus mattis. In est ante in nibh mauris. Vehicula ipsum a arcu cursus vitae. Adipiscing enim eu turpis egestas. Proin fermentum leo vel orci porta non pulvinar. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Duis at tellus at urna condimentum mattis pellentesque. Faucibus turpis in eu mi bibendum neque egestas congue quisque.</p>
-      <p>Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Lectus proin nibh nisl condimentum id. Lacus sed turpis tincidunt id aliquet risus. Semper quis lectus nulla at. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Viverra accumsan in nisl nisi. Donec ac odio tempor orci dapibus ultrices in. Dignissim diam quis enim lobortis scelerisque. Fames ac turpis egestas integer eget aliquet nibh praesent. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p>
-      <p>Urna nunc id cursus metus aliquam eleifend mi in nulla. Commodo elit at imperdiet dui accumsan sit. Dolor purus non enim praesent elementum. A diam maecenas sed enim ut sem. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Fringilla phasellus faucibus scelerisque eleifend donec. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Sem nulla pharetra diam sit amet nisl. Arcu cursus vitae congue mauris rhoncus. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus.</p>
+      <p class="p-small bio2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra et ultrices neque ornare. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Luctus venenatis lectus magna fringilla urna porttitor. In est ante in nibh mauris cursus mattis. In est ante in nibh mauris. Vehicula ipsum a arcu cursus vitae. Adipiscing enim eu turpis egestas. Proin fermentum leo vel orci porta non pulvinar. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Duis at tellus at urna condimentum mattis pellentesque. Faucibus turpis in eu mi bibendum neque egestas congue quisque.</p>
+    </div> 
+    <div class="row text-center">
+      <div class="col-sm">
+        <p><b>Who I Am</b><br>
+          Learn more about me and my background</p>
+        <button class="main-button main-links:visited"><a href="#"></a>Bio</button>
+      </div>
+      <div class="col-sm">
+        <p><b>What I Do</b><br>
+          Things I can create or how I think</p>
+        <button class="main-button main-links:visited gap=3"><a href="#"></a>Projects</button>
+        <button class="main-button main-links:visited"><a href="#"></a>Portfolio</button>
+      </div>
+      <div class="col-sm">
+        <p><b>Where to Connect</b><br>
+          Reach out or link up on social media or GitHub</p>
+        <button class="main-button main-links:visited"><a href="#"></a>Contact</button>
+      </div>
     </div>
     <div>
-      <h2>Information Cards</h2>
-      <div class="row">
+        <div>
+        <h2 class="section-heading-dark">Lorem ipsum</h2>
+        <p>Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Lectus proin nibh nisl condimentum id. Lacus sed turpis tincidunt id aliquet risus. Semper quis lectus nulla at. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Viverra accumsan in nisl nisi. Donec ac odio tempor orci dapibus ultrices in. Dignissim diam quis enim lobortis scelerisque. Fames ac turpis egestas integer eget aliquet nibh praesent. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p>
+      </div>
+      <div>
+        <p class="p-small">Urna Nunc, "Id cursus metus aliquam eleifend mi in nulla: Commodo elit at imperdiet dui accumsan sit," Dolor purus, Non enim praesent elementum, September 2023, <a href="jhelm-home.html">Home</a>.</p>  
+      </div>
+    </div>
+    <div>
+      <h3 class="section-heading-light">Information Cards</h3> <!--Some styling for information or areas of focus for Bio page?-->
+      <div class="row container">
         <div class="col-sm shadow-box">
           <p class="card-heading">Column A</p>
           <p>Lorem ipsum dolor sit amet</p>
@@ -91,31 +175,40 @@
             <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
           </ol>
         </div>
+        <div class="p-small">
+          <p>Current time is: <span id="date-container"></span></p>
+          <!-- This ^^ is where the date and time will be displayed -->
+        </div>
+    </div>
+    <div class="content-center">
+      <span><img src="images/party-parrot.gif" width="50"></span>
     </div>
   </main>
-  <footer class="container-fluid footer-main">
+  <footer class="container-fluid footer-main"> <!--Footer section to be copy/pasted in other pages HTML files-->
     <div>
       <div class="row">
         <div class="col-sm-2">
           <ul class="footer-links">
-            <li>Home<i class="bi bi-house-heart"></i></li>
-            <li>Bio<i class="bi bi-journal-richtext"></i></li> <!--about me and background-->
-            <li>Projects<i class="bi bi-clipboard-data"></i></li> <!--list of games, interactives, etc. I've made-->
-            <li>Contact<i class="bi bi-headset"></i></li> <!--and social-->
+            <li><a href="jhelm-home.html">Home</a><i class="bi bi-house-heart"></i></li>
+            <li><a href="#">Bio</a><i class="bi bi-journal-richtext"></i></li> <!--about me and background-->
+            <li><a href="#">Projects</a><i class="bi bi-clipboard-data"></i></li> <!--list of games, interactives, etc. I've made-->
+            <li><a href="#">Contact</a><i class="bi bi-headset"></i></li> <!--and social-->
           </ul>
         </div>
         <div class="col-lg">
-          <p class="italic-p">Jill-of-all-trades, Master of History | Pawrent of 4 | Captain & Finder of clarity in chaos</p>
-          <p>This page was built using my knowledge of HTML, CSS, Bootstrap, and Javascript.<br>
-          Current time for creator is: <span id="currentDate"></span> (CT)
-          </p>
+          <p class="bio2">Jill-of-all-trades, Master of History | Pawrent of 4 | Captain & Finder of clarity in chaos<br>
+            <span class="italic-p">This page was built using my knowledge of HTML, CSS, Bootstrap, and Javascript.</span></p>
         </div>
         <div class="col-sm-2">
-          <img src="images/bw-1254-removebg-preview.png" height="100" class="footer-pic" alt="black and white profile photo of Jessica Helmers">
+          <img src="images/bw-1254-removebg-preview.png" height="100" class="footer-pic" alt="black and white profile photo of Jessica">
         </div>
     </div>
   </footer>
-  <script src=""></script> <!--JS and other node.module files-->
+<!--These are the node_module files for the page(s) that are found in the .gitignore file-->
+<script src="jhelm.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 </body>
 </html>
 

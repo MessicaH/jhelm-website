@@ -1,4 +1,4 @@
-/* All elements in webpage */
+/* All elements in webpage /////////////////////////////////////////////////////////// */
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -7,7 +7,12 @@ header, main {
     font-size: medium;
 }
 
-/* Nav Menu (at top of page) elements and styling*/
+.favicon {
+    background-image: url(images/profile-no_bg.png);
+    height: 15px;
+}
+
+/* Nav Menu (at top of page) elements and styling /////////////////////////////////////////////////////////// */
 
 .navbar-brand {
     margin-left: 20px;
@@ -33,47 +38,57 @@ header, main {
     margin-right: 10px;
 }
 
-.icon_prof-pif {
-    background-image: url(/images/profile-no_bg.png);
+.icon_navbar {
     height: 20px;
-    width: 20px;
-    display: block;
 }
 
-.icon-table {
-    text-align: center;
-}
 
-/* Body > Main elements and styling */
+/* Body > Main elements and styling /////////////////////////////////////////////////////////// */
 
 .main-margins {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
 }
 
-/* Body > Footer elements and styling */
+/* .main-container {
+    min-height: 100vh;
+} */
 
-.footer-main {
-    background-color: rgb(71, 71, 71);
-    color: white;
-    padding: 25px 25px 10px 25px;
-    font-size: small;
-    text-align: center;
-}
-
-i {
+i, .icon_navbar {
     margin-right: 10px;
     margin-left: 10px;
 }
 
+/*.icon-table {
+    text-align: center;
+}
+*/
+
+.zodiac-card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    box-shadow: 5px 5px 5px rgb(71, 71, 71);
+}
+
+.zodiac-glow:hover {
+    text-shadow: 1px 2px 3px gold;
+}
+
+.content-center {
+    text-align: center;
+}
+
 .bio {
-    margin-block: 25px;
-    margin-left: 10px;
+    margin-bottom: 25px;
+    margin: 10px;
 }
 
 .bio2 {
-    margin-block: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .bio-pic {
@@ -83,23 +98,12 @@ i {
     box-shadow: 5px 5px lightblue;
 }
 
+.p-small {
+    font-size: smaller;
+}
+
 .italic-p {
     font-style: italic;
-    font-size: medium;
-}
-
-.footer-links {
-    list-style-type: none;
-    font-size: medium;
-}
-
-.footer-links:visited {
-    color: lightskyblue;
-}
-
-.footer-pic {
-    border-radius: 5px;
-    text-align: center;
 }
 
 .shadow-box {
@@ -110,7 +114,100 @@ i {
     margin: 10px;
 }
 
-.card-heading {
+.headline  {
+    padding: 5px;
+    background-size: cover;
+    /*background-image: url(images/flower-crown.jpg);*/
+    background-color: cadetblue;
+    color: white;
+}
+
+.section-heading-light {
+    background-color: rgb(250, 175, 114);
+    color: black;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.section-heading-dark {
+    background-color: #6c757d;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.card-heading, .headline  {
     font-weight: bold;
     font-stretch: ultra-expanded;
+    padding-left: 10px;
+}
+
+.main-links:visited {
+    color: rgb(250, 175, 114);
+}
+
+.main-button {
+    background-color: slateblue;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-color: none;    
+    border-radius: 5px;
+    box-shadow: 3px 3px 7px gray;
+    align-content: center;
+    font-size: smaller;
+    margin: 10px;
+    margin-top: 0px;
+    width: 100px;
+}
+
+.main-button:hover {
+    background-color: rgb(254, 233, 111);
+    color: black;
+    font-weight: bold;
+}
+
+a {
+    color: lightblue;
+}
+
+a:hover {
+    color: slateblue;
+}
+
+/* Body > Footer elements and styling /////////////////////////////////////////////////////////// */
+
+.footer-main {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 25px 25px 10px 25px;
+    font-size: small;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    font-size: medium;
+}
+
+.footer-links:visited {
+    color: lightblue;
+}
+
+.footer-pic {
+    border-radius: 5px;
+    border-radius: 25px;
+}
+
+
+
+/* Miscellaneous pages and learning CSS /////////////////////////////////////////////////////////// */
+
+.table-DOM {
+    margin: 25px 10px 25px 10px;
+}
+
+.button-DOM {
+    margin: 10px;
 }

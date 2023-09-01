@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHelm</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--bootstrap icons CSS-->
+    <link rel="stylesheet" href="jhelm.css"> <!--my custom CSS-->
+</head>
+
+<body>
+<!--Header/Navbar Styling for JHELM site /////////////////////////////-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="jhelm-home.html">Jessica Helmers</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText"> <!--This is the main nav menu and associated links-->
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown"> <!--This is the first dropdown in Navbar menu-->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu shadow-box">
+                      <p class="section-heading-dark">Udemy</p>
+                      <li><a class="dropdown-item p-small" href="#">Dice Game</a></li>
+                      <li><a class="dropdown-item p-small" href="#">Music Camp</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <p class="section-heading-dark">Promineo Tech</p>
+                      <li><a class="dropdown-item p-small" href="#">Tic-Tac-Toe</a></li>
+                      <p class="section-heading-dark">GitHub<img src="images/github-mark-white.png" class="icon_navbar"></p>
+                      <li><a class="dropdown-item p-small" href="https://github.com/MessicaH">My Public Repos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"> <!--This is the second dropdown in Navbar menu-->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Portfolio
+                    </a>
+                    <ul class="dropdown-menu shadow-box">
+                      <p class="section-heading-dark">How-To Guides</p>
+                      <li><a class="dropdown-item p-small" href="#">Dungeons & Dragons (D&D)</a></li>
+                      <li><a class="dropdown-item p-small" href="#">HTML, CSS and Javascript (Front-End Basics)</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <p class="section-heading-dark">Case Studies</p>
+                      <li><a class="dropdown-item p-small" href="#">Who Should Rule</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <span class="navbar-text">This text is a "span"ner to my plan.</span> <!--Some fun text in upper right-hand corner-->
+            </div>
+          </nav>
+    </header>
+
+<!--new page content for Main on JHELM site ///////////////////-->
+    <main>
+
+    </main>
+
+<!--Footer Styling for JHELM site /////////////////////////////-->
+    <footer class="container-fluid footer-main"> <!--Footer section to be copy/pasted in other pages HTML files-->
+        <div>
+          <div class="row">
+            <div class="col-sm-2">
+              <ul class="footer-links">
+                <li><a href="jhelm-home.html">Home</a><i class="bi bi-house-heart"></i></li>
+                <li><a href="#">Bio</a><i class="bi bi-journal-richtext"></i></li> <!--about me and background-->
+                <li><a href="#">Projects</a><i class="bi bi-clipboard-data"></i></li> <!--list of games, interactives, etc. I've made-->
+                <li><a href="#">Contact</a><i class="bi bi-headset"></i></li> <!--and social-->
+              </ul>
+            </div>
+            <div class="col-lg">
+              <p class="italic-p">Jill-of-all-trades, Master of History | Pawrent of 4 | Captain & Finder of clarity in chaos</p>
+              <p>This page was built using my knowledge of HTML, CSS, Bootstrap, and Javascript.<br>
+              Current time for creator is: <span id="currentDate"></span> (CT)
+              </p>
+            </div>
+            <div class="col-sm-2">
+              <img src="images/bw-1254-removebg-preview.png" height="100" class="footer-pic" alt="black and white profile photo of Jessica">
+            </div>
+        </div>
+      </footer>
+    
+<!--Script block for Bootstrap and JQuery, etc.-->
+<script src="jhelm.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</body>
+
+</html>
