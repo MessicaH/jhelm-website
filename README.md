@@ -40,3 +40,12 @@ Styling created using ChatGPT Assistant [Chat transcript](https://chat.openai.co
 
 ## Include your contact info
 - Even though this should be on your main GitHub profile page, you can add your email address, blog URL, or links to your social media profiles here as well.
+
+For other template ideas, check out: [https://github.com/Louis3797/awesome-readme-template/tree/main](https://github.com/Louis3797/awesome-readme-template/tree/main)
+
+## :gem: Acknowledgements
+Use this section to mention useful resources and libraries that you have used in your projects.
+ - [Shields.io](https://shields.io/)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
+ - [Readme Template](https://github.com/othneildrew/Best-README-Template)
