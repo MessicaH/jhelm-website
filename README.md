@@ -1,10 +1,11 @@
 ﻿# jhelm-website (_in progress_)
 
 ## Include a project description
-- Start with an informative description of the app/project and its features.
-- It should describe what it does and how it benefits users.
-- This section should also highlight the most important features.
+- This will be a way to show front-end web development skills, as well as templates or technical guides for concepts learned during coursework with Promineo Tech.
+- It will also use the navbar to redirect to existing social media profiles, examples/portfolios, etc.
 
+<details>
+ 
 ## Share a live URL
 - Whenever possible, remember to include a link to the live demo site in the README file.
 - Proving a live demo allows users to test your site/app’s functionality.
@@ -40,6 +41,8 @@ Styling created using ChatGPT Assistant [Chat transcript](https://chat.openai.co
 
 ## Include your contact info
 - Even though this should be on your main GitHub profile page, you can add your email address, blog URL, or links to your social media profiles here as well.
+
+</details>
 
 For other template ideas, check out: [https://github.com/Louis3797/awesome-readme-template/tree/main](https://github.com/Louis3797/awesome-readme-template/tree/main)
 
