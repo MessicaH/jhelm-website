@@ -4,6 +4,10 @@
 - This will be a way to show front-end web development skills, as well as templates or technical guides for concepts learned during coursework with Promineo Tech.
 - It will also use the navbar to redirect to existing social media profiles, examples/portfolios, etc.
 
+## To-Do List
+- Convert HTML/CSS to React structure
+- Create "FEWD Basics" one-page PDF
+
 <details>
  
 ## Share a live URL
